@@ -21,13 +21,9 @@ jobs:
           java-version: '8'
           distribution: 'temurin'
       
-      - name: Compilacion
+      - name: Compilacion y Ejecucion Test Unitarios
         run: |
-          mvn package
-
-      - name: Ejecucion Test Unitarios
-        run: |
-          mvn package feature-ms-rodrigoOrellana-mensaje
+          mvn clean package
      
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
