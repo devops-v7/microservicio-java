@@ -55,8 +55,8 @@ jobs:
       
       - name: Docker build
         run: | 
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/microservicio-java:latest .
+          docker build -t roderico/microservicio-java:latest .
           
       - name: Docker push
         run: | 
-          docker push ${{ secrets.DOCKER_USERNAME }}/microservicio-java:latest
+          docker push roderico/microservicio-java:latest
