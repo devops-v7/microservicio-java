@@ -27,7 +27,7 @@ jobs:
 
       - name: Ejecucion Test Unitarios
         run: |
-          mvn package test
+          mvn package feature-ms-rodrigoOrellana-mensaje
      
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
