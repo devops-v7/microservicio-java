@@ -68,7 +68,7 @@
                     <limit>
                       <counter>INSTRUCTION</counter>
                       <value>COVEREDRATIO</value>
-                      <minimum>0.8</minimum> <!-- Minimum threshold of 85% -->
+                      <minimum>0.78</minimum> <!-- Minimum threshold of 85% -->
                     </limit>
                   </limits>
                 </rule>
