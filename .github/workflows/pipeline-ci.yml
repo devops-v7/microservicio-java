@@ -20,14 +20,10 @@ jobs:
         with:
           java-version: '8'
           distribution: 'temurin'
-      
-      - name: Compilacion
-        run: |
-          mvn package
 
-      - name: Ejecucion Test Unitarios
+      - name: Compilacion y Ejecucion Test Unitarios con JaCoCo
         run: |
-          mvn package test
+          mvn clean verify
      
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
