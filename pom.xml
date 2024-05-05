@@ -48,13 +48,19 @@
             <goals>
               <goal>prepare-agent</goal>
             </goals>
-          </execution>
-          <execution>
-            <id>generate-report</id> <!-- Unique ID -->
-            <goals>
-              <goal>report</goal>
-            </goals>
-          </execution>
+			</execution>
+			<execution>
+			<id>generate-report</id>
+			<goals>
+				<goal>report</goal>
+			</goals>
+			<configuration>
+				<reports>
+				<report>xml</report> <!-- Generates an XML report -->
+				</reports>
+				<outputDirectory>${project.build.directory}/jacoco-reports</outputDirectory>
+			</configuration>
+			</execution>
           <execution>
             <id>verify-coverage</id> <!-- Unique ID -->
             <goals>
