@@ -15,5 +15,6 @@ spec:
       containers:
       - name: microservicio-java
         image: roderico/microservicio-java:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
