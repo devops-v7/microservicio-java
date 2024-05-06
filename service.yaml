@@ -8,6 +8,6 @@ spec:
     app: microservicio-java 
   ports:
     - protocol: TCP
-      port: 80            # Exposed port for external clients
+      port: 80            
       targetPort: 8080    # Port on the pods defined in the deployment
       nodePort: 30001     # External port for NodePort service
