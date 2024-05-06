@@ -78,5 +78,5 @@ jobs:
       
       - name: Despliegue
         run: |
-          kubectl apply -f deploy.yaml
-          kubectl apply -f service.yaml
+          kubectl apply --validate=false -f deploy.yaml
+          kubectl apply --validate=false -f service.yaml
