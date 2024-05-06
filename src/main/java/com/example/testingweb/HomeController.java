@@ -1,15 +1,13 @@
 package com.example.testingweb;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController 
 public class HomeController {
 
-	@RequestMapping("/")
-	public @ResponseBody String greeting() {
-		return "Hola, soy Rodrigo Orellana";
-	}
-
+    @RequestMapping("/")
+    public String greeting() {
+        return "Hola, soy Rodrigo Orellana";
+    }
 }
