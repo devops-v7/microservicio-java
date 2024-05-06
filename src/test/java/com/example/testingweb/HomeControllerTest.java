@@ -11,14 +11,13 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class HomeControllerTest {
+class HomeControllerTest {  
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
     void testGreeting() throws Exception {
-        // Verify if the "/" endpoint returns the correct greeting message
         mockMvc.perform(get("/"))
                .andExpect(status().isOk())
                .andExpect(content().string("Hola, soy Rodrigo Orellana"));
