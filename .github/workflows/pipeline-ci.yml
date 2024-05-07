@@ -32,7 +32,7 @@ jobs:
           mvn pdf:pdf
 
       - name: Upload JaCoCo Reports
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: jacoco-reports
           path: target/jacoco-reports/
